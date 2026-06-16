@@ -14,3 +14,13 @@ This project presents a complete theoretical and engineering design for the **qu
 1. Compile the article:  
    ```bash
    pdflatex paper_EGQV4.tex
+   
+2. Synthesize the VHDL files (e.g., with Xilinx Vivado) and program the FPGA (Artix‑7 or similar).
+
+3. Connect the AD9914 via SPI and run:
+   ```bash
+   python ad9914_control.py
+
+4.Calibrate the microwave pulses;
+```bash
+python calibration.py
